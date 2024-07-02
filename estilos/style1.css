@@ -5,14 +5,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --azulbebe:#61dee2;
+    --azulescuro:#024cad;
+    --azulclaro:#347fe1;
+    --dourado:#b8920b;
+    --cinzaescuro: #494949;
+    --cinzaclaro:#a6a6a6;
+}
+
 header h1{
-    background-color: rgb(169, 168, 168);
+    background-image: linear-gradient(to right, var(--azulbebe), var(--azulescuro));
     text-align: center;
     padding: 10px 0px;
 }
 
 i#burguer{
-    background-color: rgb(61, 61, 61);
+    background-color: var(--cinzaescuro);
     text-align: center;
     display: block;
     color: white;
@@ -22,17 +31,17 @@ i#burguer{
 
 i#burguer:hover{
     color: black;
-    background-color: rgb(180, 179, 179);
+    background-color: var(--cinzaclaro);
 }
 
 menu > ul > li > a{
     display: block;
     color: white;
     text-decoration: none;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--cinzaclaro);
     font-size: 1.2em; 
     padding: 6px 10px;
-    border: 2px solid gray;
+    border: 2px solid var(--cinzaescuro);
 }
 
 menu{
@@ -42,7 +51,8 @@ menu{
 
 menu a:hover{
     text-decoration: underline;
-    background-color: rgb(180, 179, 179);
+    background-color: rgb(201, 201, 201);
+    color: black;
 }
 
 body{
@@ -58,10 +68,19 @@ main{
 
 main h2{
     text-align: center;
+    margin-bottom: 30px;
+}
+
+main h3{
+    margin-bottom: 5px;
 }
 
 article p{
     text-indent: 20px;
     text-align: justify;
     margin-bottom: 20px;
+}
+
+img{
+    width: 100vh;
 }

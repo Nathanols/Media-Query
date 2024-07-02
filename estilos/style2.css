@@ -3,7 +3,7 @@
 @media screen and (min-width: 768px){
 
     header{
-        background-color: rgb(169, 168, 168);
+        background-image:linear-gradient(to right,var(--azulbebe),var(--azulescuro));
         margin-bottom: 20px;
     }
 
@@ -20,8 +20,18 @@
         display: inline-block;
     }
 
+    menu > ul > li > a{
+        background-color: var(--cinzaescuro);
+    }
+
     main{
         width: 730px;
         margin: auto;
+    }
+}
+
+@media screen and (max-width:875px){
+    menu > ul > li > a{
+    font-size: 1em;
     }
 }
