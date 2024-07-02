@@ -1,5 +1,27 @@
 
 
-@media (min-width: 600px) and (max-width: 768px) {
-    
+@media screen and (min-width: 768px){
+
+    header{
+        background-color: rgb(169, 168, 168);
+        margin-bottom: 20px;
+    }
+
+    i#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+        text-align: left;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 730px;
+        margin: auto;
+    }
 }
